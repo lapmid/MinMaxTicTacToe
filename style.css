@@ -1,0 +1,81 @@
+
+#tic-tac-toe {
+    border-collapse: collapse;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 2px solid #000;
+    background-color: #333;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+#message {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#score {
+    font-size: 24px;
+}
+
+#reset-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#message-container {
+    /* position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); */
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    z-index: 1; /* Place it above the grid */
+    /*display: none; /* Initially hidden */
+}
+
+/* Add a blur effect for the grid when the game is finished */
+#tic-tac-toe.game-over {
+    filter: blur(10px); /* Adjust the blur level as needed */
+    pointer-events: none; /* Disable clicks on the blurred grid */
+}

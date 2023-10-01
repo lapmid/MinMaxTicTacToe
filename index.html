@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div id="game-container">
+        <table id="tic-tac-toe">
+            <tr>
+                <td class="cell"></td>
+                <td class="cell"></td>
+                <td class="cell"></td>
+            </tr>
+            <tr>
+                <td class="cell"></td>
+                <td class="cell"></td>
+                <td class="cell"></td>
+            </tr>
+            <tr>
+                <td class="cell"></td>
+                <td class="cell"></td>
+                <td class="cell"></td>
+            </tr>
+        </table>
+        <div id="message-container">
+            <div id="message">Player X's turn</div>
+        </div>
+    </div>
+    <div id="score">Player X: 0 - Player O: 0</div>
+    <!-- <button id="reset-button">Reset</button> -->
+    <script src="model.js"></script>
+    <script src="MinMaxModel.js"></script>
+    <script src="computer.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
